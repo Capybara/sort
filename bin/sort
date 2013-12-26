@@ -2,6 +2,7 @@
 require 'sort'
 dir = CheckInput.new.dir
 puts dir
+dir ||= '.'
 inst = Clean.new
 inst.sort(dir,1)
 puts "files sorted:#{inst.files_moved}"
