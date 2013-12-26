@@ -17,6 +17,9 @@ Or install it yourself as:
     $ gem install sort
 
 ## Usage
+  - call without an argument      ``` sort ``` 
+    - defaults to current pwd
+  - call with directory argument  ``` sort /Path/to/Directory ```
 
 TODO: Write usage instructions here
 
