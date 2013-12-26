@@ -6,6 +6,9 @@ require 'fileutils'
 
 # test arguments for trailing '/', emptiness and validity
 class CheckInput
+  # Checks the user inputed directory
+  # 
+  # @return [String] if directory doesn't exist
   attr_reader :dir
   def initialize
     if ARGV.empty?
@@ -20,13 +23,17 @@ class CheckInput
     end
   end
 end
-
+# Contains file types and extensions
 EXTENSTIONS = { Archives: ['zip','gz','tar','bz'], GPG: ['gpg'], Apps: ['app'], Books: ['pdf','epub','mobi'], Images: ['jpeg','jpg','png','gif','tiff'], Ruby: ['rb'], Shell: ['sh'], Python: ['py'], Javascript: ['js'], HTML: ['html'], Text: ['txt'] }
 class Clean
+  # Sorts files
   attr_reader :files_moved
     def initialize
       @files_moved = 0
     end
+  # Sorts files 
+  # @param dir [String] directory you wish to sort
+  # @param files_older [Fixnum] sort files older than this number
   def sort(dir='./', files_older=10)
         EXTENSTIONS.each do |type,extens|
         key = type.to_s
