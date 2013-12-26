@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Sort::VERSION
   spec.authors       = ["Capybara"]
   spec.email         = ["git.capybara@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{sort yo files}
+  spec.summary       = %q{pretty good}
   spec.homepage      = ""
   spec.license       = "MIT"
 
