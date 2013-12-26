@@ -1,6 +1,6 @@
 # Sort
 
-TODO: Write a gem description
+sorts files by types and creates folders to place them in
 
 ## Installation
 
